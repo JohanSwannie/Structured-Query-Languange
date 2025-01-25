@@ -45,3 +45,28 @@ SELECT
 FROM
     employee_personal_details;
 
+/* REPLACE */
+
+SELECT 
+    REPLACE('The elephant eats lots of grass',
+        'grass',
+        'bananas') AS elephant_activity;
+        
+SELECT 
+    first_name,
+    last_name,
+    gender,
+    REPLACE(gender, 'Male', 'Man') AS sex,
+    REPLACE(gender, 'Female', 'Woman') AS sex
+FROM
+    employee_personal_details;
+    
+/* LOCATE */
+
+SELECT LOCATE('an', 'elephant') AS position_found;
+
+SELECT 
+    first_name, LOCATE('ke', first_name) AS position_found
+FROM
+    employee_personal_details;
+    
