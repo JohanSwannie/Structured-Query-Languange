@@ -104,3 +104,15 @@ FROM
     employee_work_details empwork ON emppers.id = empwork.id
         INNER JOIN
     employee_departments empdept ON empdept.id = empwork.dept_id;
+    
+/* UNION ALL */
+
+SELECT first_name, last_name FROM employee_personal_details
+UNION ALL
+SELECT first_name, last_name FROM employee_work_details;
+
+/* UNION DISTINCT */
+
+SELECT first_name, last_name FROM employee_personal_details
+UNION DISTINCT
+SELECT first_name, last_name FROM employee_work_details;
