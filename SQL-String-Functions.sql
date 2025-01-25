@@ -77,13 +77,29 @@ SELECT FIELD('c', 'p', 'z', 'a', 'e', 'c', 'h', 'u') AS string_list_index;
 /* FIND_IN_SET */
 
 SELECT FIND_IN_SET('x', '9,Y,s,8,t,p,w,x,f,h') AS position_in_list_of_strings;
-    
+
+/* FORMAT */
+
+SELECT FORMAT(317189.6781, 2) AS rounded_number;
+
+/* INSERT */
+
+SELECT 
+    INSERT('HP-PAVILION-COM ',
+        16,
+        5,
+        'PUTER') AS computer_name; 
+
 /* CONCAT */
 
 SELECT 
     CONCAT(first_name, ' ', last_name) AS full_name
 FROM
     employee_personal_details;
+
+/* INSTR */
+
+SELECT INSTR("The elephant walk on the mountain", "walk") as instring_position;
     
 /* CONCAT_WS */
 
