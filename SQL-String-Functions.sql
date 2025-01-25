@@ -33,15 +33,5 @@ FROM
     
 /* SUBSTRING */
 
-SELECT 
-    SUBSTRING('We walk down the valley',
-        4,
-        9);
-        
-SELECT 
-    first_name,
-    last_name,
-    SUBSTRING(birth_date, 6, 2) AS birth_month
-FROM
-    employee_personal_details;
+SELECT SUBSTRING("We walk down the valley", 4, 9);
 
