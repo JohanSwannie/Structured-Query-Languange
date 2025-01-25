@@ -19,9 +19,17 @@ FROM
     
 /* TRIM, LTRIM and RTRIM */
 
-SELECT TRIM('             We know it will be okay                 ') as trimmed_string;
+SELECT TRIM('             We know it will be okay                 ') AS trimmed_string;
 SELECT LTRIM('             We know it will be okay                 ') as left_trimmed;
 SELECT RTRIM('             We know it will be okay                 ') as right_trimmed;
 
+/* LEFT and RIGHT */
+
+SELECT 
+    LEFT(first_name, 3) AS name_first3,
+    RIGHT(first_name, 3) AS name_last3
+FROM
+    employee_personal_details; 
+    
 
 
