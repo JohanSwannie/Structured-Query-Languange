@@ -70,6 +70,10 @@ SELECT
 FROM
     employee_personal_details;
     
+/* FIELD */
+
+SELECT FIELD('c', 'p', 'z', 'a', 'e', 'c', 'h', 'u') AS string_list_index; 
+    
 /* CONCAT */
 
 SELECT 
