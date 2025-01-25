@@ -107,12 +107,22 @@ FROM
     
 /* UNION ALL */
 
-SELECT first_name, last_name FROM employee_personal_details
-UNION ALL
-SELECT first_name, last_name FROM employee_work_details;
+SELECT 
+    first_name, last_name
+FROM
+    employee_personal_details 
+UNION ALL SELECT 
+    first_name, last_name
+FROM
+    employee_work_details;
 
 /* UNION DISTINCT */
 
-SELECT first_name, last_name FROM employee_personal_details
-UNION DISTINCT
-SELECT first_name, last_name FROM employee_work_details;
+SELECT 
+    first_name, last_name
+FROM
+    employee_personal_details 
+UNION DISTINCT SELECT 
+    first_name, last_name
+FROM
+    employee_work_details;
