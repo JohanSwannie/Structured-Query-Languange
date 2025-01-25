@@ -49,3 +49,17 @@ FROM
         INNER JOIN
     employee_work_details AS wrk ON pers.id = wrk.id;
     
+SELECT 
+    *
+FROM
+    employee_employee_details
+        LEFT OUTER JOIN
+    employee_work_details ON employee_employee_details.id = employee_work_details.id;
+    
+SELECT 
+    *
+FROM
+    employee_employee_details
+        RIGHT OUTER JOIN
+    employee_work_details ON employee_employee_details.id = employee_work_details.id;
+
