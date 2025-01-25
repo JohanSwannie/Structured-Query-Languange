@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS employee_personal_details (
 INSERT INTO employee_personal_details
 (id, first_name, last_name, age, gender, birth_date)
 VALUES (01, "James", "Mower", 30, "Male", "1994-10-17"), (02, "Luke", "Brown", 32, "Male", "1992-02-25"), (03, "John", "Algar", 40, "Male", "1985-04-22"),
-       (04, "Mary", "McCarthy", 25, "Male", "1999-12-15"), (05, "Joyce", "Tanham", 33, "Male", "1991-09-12");
+       (04, "Mary", "McCarthy", 25, "Female", "1999-12-15"), (05, "Joyce", "Tanham", 33, "Female", "1991-09-12");
 
 DROP TABLE IF EXISTS employee_work_details;
 
@@ -126,3 +126,25 @@ UNION DISTINCT SELECT
     first_name, last_name
 FROM
     employee_work_details;
+    
+/* MULTIPLE UNIONS */
+
+SELECT 
+    first_name, last_name, 'Old Man' AS category
+FROM
+    employee_personal_details
+WHERE
+    age > 35 AND gender = 'Male' 
+UNION SELECT 
+    first_name, last_name, 'Old Woman' AS category
+FROM
+    employee_personal_details
+WHERE
+    age > 30 AND gender = 'Female' 
+UNION SELECT 
+    first_name, last_name, 'Highly Paid Employee' AS category
+FROM
+    employee_work_details
+WHERE
+    salary > 115000
+ORDER BY first_name , last_name;
