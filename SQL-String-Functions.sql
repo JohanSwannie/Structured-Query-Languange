@@ -73,6 +73,10 @@ FROM
 /* FIELD */
 
 SELECT FIELD('c', 'p', 'z', 'a', 'e', 'c', 'h', 'u') AS string_list_index; 
+
+/* FIND_IN_SET */
+
+SELECT FIND_IN_SET('x', '9,Y,s,8,t,p,w,x,f,h') AS position_in_list_of_strings;
     
 /* CONCAT */
 
