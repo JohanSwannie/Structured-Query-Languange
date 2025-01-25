@@ -31,5 +31,7 @@ SELECT
 FROM
     employee_personal_details; 
     
+/* SUBSTRING */
 
+SELECT SUBSTRING("We walk down the valley", 3, 10);
 
