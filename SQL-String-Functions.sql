@@ -76,3 +76,13 @@ SELECT
     CONCAT(first_name, ' ', last_name) AS full_name
 FROM
     employee_personal_details;
+    
+/* CONCAT_WS */
+
+SELECT 
+    CONCAT_WS('-',
+            'Cullinan',
+            'Premier',
+            'Golf',
+            'Club') AS golf_course;
+            
