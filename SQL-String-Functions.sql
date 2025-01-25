@@ -33,5 +33,5 @@ FROM
     
 /* SUBSTRING */
 
-SELECT SUBSTRING("We walk down the valley", 3, 10);
+SELECT SUBSTRING("We walk down the valley", 4, 9);
 
