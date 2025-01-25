@@ -70,3 +70,9 @@ SELECT
 FROM
     employee_personal_details;
     
+/* CONCAT */
+
+SELECT 
+    CONCAT(first_name, ' ', last_name) AS full_name
+FROM
+    employee_personal_details;
