@@ -24,13 +24,13 @@ SELECT
         WHEN salary > 124999 THEN salary * 1.10
     END AS new_salary,
     CASE
-        WHEN dept_id = 01 THEN salary * 0.05
-        WHEN dept_id = 02 THEN salary * 0.06
-        WHEN dept_id = 03 THEN salary * 0.07
-        WHEN dept_id = 04 THEN salary * 0.08
-        WHEN dept_id = 05 THEN salary * 0.09
-        WHEN dept_id = 06 THEN salary * 0.10
-        WHEN dept_id = 07 THEN salary * 0.11
+        WHEN dept_id = 01 THEN salary * 0.03
+        WHEN dept_id = 02 THEN salary * 0.04
+        WHEN dept_id = 03 THEN salary * 0.05
+        WHEN dept_id = 04 THEN salary * 0.06
+        WHEN dept_id = 05 THEN salary * 0.07
+        WHEN dept_id = 06 THEN salary * 0.08
+        WHEN dept_id = 07 THEN salary * 0.10
     END AS bonus
 FROM
     employee_work_details;
