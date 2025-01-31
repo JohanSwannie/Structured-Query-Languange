@@ -83,7 +83,7 @@ SELECT
 FROM
     employee_personal_details
         LEFT OUTER JOIN
-    employee_work_details ON employee_personal_details.id = employee_work_details.id;
+    employee_work_details ON personal_id = work_id;
 
 /* RIGHT OUTER JOIN */
     
