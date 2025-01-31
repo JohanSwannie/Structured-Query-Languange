@@ -7,7 +7,7 @@ USE companyA;
 DROP TABLE IF EXISTS employee_personal_details;
 
 CREATE TABLE IF NOT EXISTS employee_personal_details (
-    id INT PRIMARY KEY NOT NULL,
+    personal_id INT PRIMARY KEY NOT NULL,
     first_name VARCHAR(35),
     last_name VARCHAR(35),
     age INT,
@@ -16,14 +16,14 @@ CREATE TABLE IF NOT EXISTS employee_personal_details (
 );
 
 INSERT INTO employee_personal_details
-(id, first_name, last_name, age, gender, birth_date)
+(personal_id, first_name, last_name, age, gender, birth_date)
 VALUES (01, "James", "Mower", 30, "Male", "1994-10-17"), (02, "Luke", "Brown", 32, "Male", "1992-02-25"), (03, "John", "Algar", 40, "Male", "1985-04-22"),
        (04, "Mary", "McCarthy", 25, "Female", "1999-12-15"), (05, "Joyce", "Tanham", 33, "Female", "1991-09-12");
 
 DROP TABLE IF EXISTS employee_work_details;
 
 CREATE TABLE IF NOT EXISTS employee_work_details (
-    id INT PRIMARY KEY NOT NULL,
+    work_id INT PRIMARY KEY NOT NULL,
     first_name VARCHAR(40),
     last_name VARCHAR(40),
     occupation VARCHAR(60),
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS employee_work_details (
 );
 
 INSERT INTO employee_work_details
-(id, first_name, last_name, occupation, salary, dept_id)
+(work_id, first_name, last_name, occupation, salary, dept_id)
 VALUES (01, "James", "Mower", "Business Analyst", 115000, 03), (03, "John", "Algar", "Reporting Analyst", 105000, 07),
        (04, "Mary", "McCarthy", "IT Help Desk Engineer", 95000, 01), (05, "Joyce", "Tanham", "Data Analyst", 125000, 04),
        (06, "Anna", "Goodman", "Data Analyst", 125000, 04), (07, "Hank", "Opperman", "IT Help Desk Engineer", 90000, 01);
@@ -40,12 +40,12 @@ VALUES (01, "James", "Mower", "Business Analyst", 115000, 03), (03, "John", "Alg
 DROP TABLE IF EXISTS employee_departments;
 
 CREATE TABLE IF NOT EXISTS employee_departments (
-    id INT PRIMARY KEY NOT NULL,
+    dept_id INT PRIMARY KEY NOT NULL,
     department_name VARCHAR(80)
 );
 
 INSERT INTO employee_departments
-(id, department_name)
+(dept_id, department_name)
 VALUES (01, "IT Hardware and Software Solutions"), (02, "IT Systems Administration"), (03, "Business Department"), 
        (04, "Data Division"), (05, "Database Department"), (06, "Operations"), (07, "Reporting Department");
 
