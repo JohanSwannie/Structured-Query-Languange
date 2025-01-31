@@ -65,7 +65,7 @@ SELECT
 FROM
     employee_personal_details AS pers
         INNER JOIN
-    employee_work_details AS wrk ON pers.id = wrk.id;
+    employee_work_details AS wrk ON pers.personal_id = wrk.work_id;
 
 /* LEFT OUTER JOIN */
     
