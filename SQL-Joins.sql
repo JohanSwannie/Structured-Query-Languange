@@ -108,11 +108,11 @@ FROM
 SELECT 
     *
 FROM
-    employee_personal_details emppers
+    employee_personal_details 
         INNER JOIN
-    employee_work_details empwork ON emppers.id = empwork.id
+    employee_work_details empwork ON personal_id = work_id
         INNER JOIN
-    employee_departments empdept ON empdept.id = empwork.dept_id;
+    employee_departments empdept ON empdept.dept_id = empwork.dept_id;
     
 /* UNION ALL */
 
