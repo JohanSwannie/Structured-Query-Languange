@@ -99,9 +99,9 @@ FROM
 SELECT 
     *
 FROM
-    employee_personal_details emp1
+    employee_personal_details pers1
         JOIN
-    employee_personal_details emp2 ON emp1.id + 1 = emp2.id;
+    employee_personal_details pers2 ON pers1.personal_id + 1 = pers2.personal_id;
 
 /* JOIN MULTIPLE TABLES */
 
