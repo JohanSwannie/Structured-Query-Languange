@@ -4,9 +4,9 @@ SELECT
     *
 FROM
     employee_departments
-WHERE id in
+WHERE dept_id in
     (SELECT 
-            id
+            work_id
         FROM
             employee_work_details
         WHERE
