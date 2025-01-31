@@ -66,7 +66,16 @@ FROM
     employee_personal_details AS pers
         INNER JOIN
     employee_work_details AS wrk ON pers.personal_id = wrk.work_id;
+    
+/* INNER JOIN EXAMPLE 3 */
 
+SELECT 
+    *
+FROM
+    employee_personal_details 
+        INNER JOIN
+    employee_work_details  ON personal_id = work_id;
+    
 /* LEFT OUTER JOIN */
     
 SELECT 
