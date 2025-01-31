@@ -56,7 +56,7 @@ SELECT
 FROM
     employee_personal_details
         INNER JOIN
-    employee_work_details ON employee_personal_details.id = employee_work_details.id;
+    employee_work_details ON employee_personal_details.personal_id = employee_work_details.work_id;
 
 /* INNER JOIN EXAMPLE 2 */
 
