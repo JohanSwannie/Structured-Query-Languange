@@ -6,8 +6,8 @@ SELECT
     *
 FROM
     employee_work_details
-WHERE dept_id in
-    (SELECT 
+WHERE
+    dept_id IN (SELECT 
             dept_id
         FROM
             employee_departments
