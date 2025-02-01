@@ -3,7 +3,7 @@ USE companyA;
 /* WINDOWS FUNCTIONS EXAMPLE 1 */
 
 SELECT 
-pers.first_name, pers.last_name, work.salary, AVG(salary) OVER(PARTITION BY pers.gender) as avg_salary 
+pers.first_name, pers.last_name, gender, work.salary, AVG(salary) OVER(PARTITION BY pers.gender) as avg_salary 
 FROM employee_personal_details pers
 JOIN employee_work_details work ON personal_id = work_id;
 
