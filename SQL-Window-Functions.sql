@@ -26,6 +26,6 @@ JOIN employee_work_details work ON personal_id = work_id;
 
 SELECT 
 pers.first_name, pers.last_name, work.salary, 
-ROW_NUMBER() OVER(PARTITION BY gender) AS gender_row_number
+ROW_NUMBER() OVER(PARTITION BY gender)
 FROM employee_personal_details pers
 JOIN employee_work_details work ON personal_id = work_id;
