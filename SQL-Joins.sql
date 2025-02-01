@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS employee_personal_details (
 INSERT INTO employee_personal_details
 (personal_id, first_name, last_name, age, gender, birth_date)
 VALUES (01, "James", "Mower", 30, "Male", "1994-10-17"), (02, "Luke", "Brown", 32, "Male", "1992-02-25"), (03, "John", "Algar", 40, "Male", "1985-04-22"),
-       (04, "Mary", "McCarthy", 25, "Female", "1999-12-15"), (05, "Joyce", "Tanham", 33, "Female", "1991-09-12");
+       (04, "Mary", "McCarthy", 25, "Female", "1999-12-15"), (05, "Joyce", "Tanham", 33, "Female", "1991-09-12"), (06, "Anna", "Goodman", 33, "Female", "1991-07-19");
 
 DROP TABLE IF EXISTS employee_work_details;
 
@@ -33,9 +33,10 @@ CREATE TABLE IF NOT EXISTS employee_work_details (
 
 INSERT INTO employee_work_details
 (work_id, first_name, last_name, occupation, salary, dept_id)
-VALUES (01, "James", "Mower", "Business Analyst", 115000, 03), (03, "John", "Algar", "Reporting Analyst", 105000, 07),
-       (04, "Mary", "McCarthy", "IT Help Desk Engineer", 95000, 01), (05, "Joyce", "Tanham", "Data Analyst", 125000, 04),
-       (06, "Anna", "Goodman", "Data Analyst", 125000, 04), (07, "Hank", "Opperman", "IT Help Desk Engineer", 90000, 01);
+VALUES (01, "James", "Mower", "Business Analyst", 115000, 03), (02, "Luke", "Brown", "Business Analyst", 105000, 03),
+       (03, "John", "Algar", "Reporting Analyst", 105000, 07), (04, "Mary", "McCarthy", "IT Help Desk Engineer", 95000, 01), 
+       (05, "Joyce", "Tanham", "Data Analyst", 125000, 04), (06, "Anna", "Goodman", "Data Analyst", 125000, 04), 
+       (07, "Hank", "Opperman", "IT Help Desk Engineer", 90000, 01);
 
 DROP TABLE IF EXISTS employee_departments;
 
