@@ -25,7 +25,7 @@ JOIN employee_work_details work ON personal_id = work_id;
 /* WINDOWS FUNCTIONS EXAMPLE 4 */
 
 SELECT 
-pers.first_name, pers.last_name, work.salary, 
+pers.first_name, pers.last_name, work.salary, gender,
 ROW_NUMBER() OVER(PARTITION BY gender ORDER BY work.salary DESC) AS gender_row_number
 FROM employee_personal_details pers
 JOIN employee_work_details work ON personal_id = work_id;
