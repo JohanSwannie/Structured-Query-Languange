@@ -25,3 +25,13 @@ CTE_Example3 AS
 SELECT *
 FROM CTE_Example2
 JOIN CTE_Example3 ON personal_id = work_id;
+
+WITH CTE_Example4 (gender, average_salary, maximum_salary, minimum_salary, count_salary) AS
+(
+	SELECT gender, AVG(salary) AS avg_sal, MAX(salary) AS max_sal, MIN(salary) AS min_sal, COUNT(salary) AS count_sal
+    FROM employee_personal_details
+    JOIN employee_work_details ON personal_id = work_id
+    GROUP BY gender
+)
+SELECT * 
+FROM CTE_Example4;
