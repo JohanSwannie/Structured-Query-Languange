@@ -11,3 +11,11 @@ VALUES ('Elephant'), ('Lion'), ('Giraffe'), ('Rhinoserous'), ('Kangaroo');
 SELECT *
 FROM zoo_animals;
 
+CREATE TEMPORARY TABLE IF NOT EXISTS high_salaries (
+SELECT * 
+FROM employee_work_details
+WHERE salary > 105000
+);
+
+SELECT *
+FROM high_salaries;
