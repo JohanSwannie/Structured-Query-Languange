@@ -7,7 +7,7 @@ WITH CTE_Example1 AS
     JOIN employee_work_details ON personal_id = work_id
     GROUP BY gender
 )
-SELECT AVG(avg_sal) AS average_salary
+SELECT * 
 FROM CTE_Example1;
 
 WITH CTE_Example2 AS
