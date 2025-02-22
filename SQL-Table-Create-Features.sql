@@ -27,3 +27,5 @@ DROP TABLE IF EXISTS employee_details2;
 CREATE TABLE IF NOT EXISTS employee_details2 AS
 SELECT emp_name, emp_surname, emp_position, emp_salary
 FROM employee_details1;
+
+SELECT * FROM employee_details2;
