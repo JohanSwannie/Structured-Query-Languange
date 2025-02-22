@@ -44,4 +44,9 @@ ALTER TABLE employee_details1
 DROP COLUMN emp_hobby;
 
 DESCRIBE employee_details1;
- 
+
+DESCRIBE employee_details2; 
+
+SHOW COLUMNS FROM employee_details1;
+
+SHOW COLUMNS FROM employee_details2;
