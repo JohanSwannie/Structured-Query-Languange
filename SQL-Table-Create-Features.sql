@@ -48,3 +48,5 @@ DESCRIBE employee_details2;
 SHOW COLUMNS FROM employee_details1;
 
 SHOW COLUMNS FROM employee_details2;
+
+EXPLAIN SELECT * FROM employee_details1 WHERE id > 2 ORDER BY emp_surname;
