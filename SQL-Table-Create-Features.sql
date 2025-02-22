@@ -31,4 +31,6 @@ FROM employee_details1;
 SELECT * FROM employee_details2;
 
 ALTER TABLE employee_details1
-ADD emp_email VARCHAR(70);
+ADD COLUMN emp_email VARCHAR(70),
+ADD COLUMN emp_hobby VARCHAR(50);
+ 
