@@ -4,6 +4,8 @@ CREATE DATABASE IF NOT EXISTS companyb;
 
 USE companyb;
 
+SHOW DATABASES;
+
 DROP TABLE IF EXISTS employee_details1;
 
 CREATE TABLE IF NOT EXISTS employee_details1 (
