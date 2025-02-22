@@ -32,7 +32,7 @@ FROM employee_details1;
 
 SELECT * FROM employee_details2;
 
-SHOW TABLES;
+SHOW TABLES FROM companyb;
 
 ALTER TABLE employee_details1
 ADD COLUMN emp_email VARCHAR(70),
