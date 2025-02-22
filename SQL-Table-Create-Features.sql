@@ -29,3 +29,6 @@ SELECT emp_name, emp_surname, emp_position, emp_salary
 FROM employee_details1;
 
 SELECT * FROM employee_details2;
+
+ALTER TABLE employee_details1
+ADD emp_email VARCHAR(70);
