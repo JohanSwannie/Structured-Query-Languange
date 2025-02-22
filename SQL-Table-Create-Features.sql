@@ -23,3 +23,7 @@ VALUES ('James', 'Mower', 'Senior Project Manager', 185000),
 ('Trudy', 'Brown', 'Data Analyst', 95000);
 
 DROP TABLE IF EXISTS employee_details2;
+
+CREATE TABLE IF NOT EXISTS employee_details2 AS
+SELECT emp_name, emp_surname, emp_position, emp_salary
+FROM employee_details1;
