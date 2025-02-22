@@ -38,8 +38,6 @@ ALTER TABLE employee_details1
 ADD COLUMN emp_email VARCHAR(70),
 ADD COLUMN emp_hobby VARCHAR(50);
 
-DESCRIBE employee_details1;
-
 ALTER TABLE employee_details1
 DROP COLUMN emp_hobby;
 
