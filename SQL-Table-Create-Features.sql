@@ -50,3 +50,23 @@ SHOW COLUMNS FROM employee_details1;
 SHOW COLUMNS FROM employee_details2;
 
 EXPLAIN SELECT * FROM employee_details1 WHERE id > 2 ORDER BY emp_surname;
+
+CREATE TABLE department (
+	dept_id INT NOT NULL,
+    dept_name VARCHAR(70) DEFAULT 'Information Technology',
+    dept_budget INT NOt NULL,
+    CONSTRAINT udn_department UNIQUE (dept_id, dept_name),
+    CHECK (dept_budget > 2000),
+    PRIMARY KEY (dept_id)
+);
+
+CREATE TABLE orders (
+	order_id INT NOT NULL,
+    order_number INT NOT NULL,
+    order_date DATE,
+    dept_id INT NOT NULL,
+    CONSTRAINT uon_order UNIQUE (order_number, dept_id),
+    PRIMARY KEY (order_id),
+    FOREIGN KEY (dept_id) REFERENCES department(dept_id)
+)
+
