@@ -56,8 +56,7 @@ SELECT
     first_name,
     last_name,
     gender,
-    REPLACE(gender, 'Male', 'Man') AS sex,
-    REPLACE(gender, 'Female', 'Woman') AS sex
+    REPLACE(gender, 'Male', 'Man') AS sex_of_Male
 FROM
     employee_personal_details;
     
