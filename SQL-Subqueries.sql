@@ -26,5 +26,3 @@ SELECT
             employee_work_details)
 FROM
     employee_work_details;
-
-/* SUBQUERY EXAMPLE 2 */
