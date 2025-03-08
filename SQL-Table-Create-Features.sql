@@ -54,7 +54,7 @@ EXPLAIN SELECT * FROM employee_details1 WHERE id > 2 ORDER BY emp_surname;
 CREATE TABLE department (
 	dept_id INT NOT NULL,
     dept_name VARCHAR(70) DEFAULT 'Information Technology',
-    dept_budget INT NOt NULL,
+    dept_budget INT NOT NULL,
     CONSTRAINT udn_department UNIQUE (dept_id, dept_name),
     CHECK (dept_budget > 2000),
     PRIMARY KEY (dept_id)
