@@ -36,7 +36,7 @@ FROM
 SELECT 
     SUBSTRING('We walk down the valley',
         4,
-        9);
+        10) as new_string;
         
 SELECT 
     first_name,
