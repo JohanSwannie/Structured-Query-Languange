@@ -71,7 +71,7 @@ FROM
     
 /* FIELD */
 
-SELECT FIELD('c', 'p', 'z', 'a', 'e', 'c', 'h', 'u') AS string_list_index; 
+SELECT FIELD('c', 'p', 'h', 'z', 'a', 'e', 'c', 'h', 'u') AS string_list_index; 
 
 /* FIND_IN_SET */
 
