@@ -12,7 +12,7 @@ WHERE
         FROM
             employee_departments
         WHERE
-            dept_id = 01);
+            dept_id > 00 AND dept_id < 03);
             
 /* SUBQUERY EXAMPLE 2 */
 
